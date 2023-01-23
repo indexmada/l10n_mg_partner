@@ -1,0 +1,23 @@
+<odoo>
+    <record id="res_partner_inherit_fisc" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.fisc</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='website']" position="after">
+                <field name="nif" attrs="{'invisible':[('company_type','=','person')]}"/>
+                <field name="stat" attrs="{'invisible':[('company_type','=','person')]}"/>
+                <field name="rcs" attrs="{'invisible':[('company_type','=','person')]}"/>
+                <label for="cin"/>
+                <div>
+                    <field name="cin" class="oe_inline" attrs="{'invisible':[('company_type','=','company')]}"/>
+                    du
+                    <field name="date_cin" class="oe_inline" nolabel="1" attrs="{'invisible':[('company_type','=','company')]}"/>
+                </div>
+            </xpath>
+            <xpath expr="//field[@name='vat']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </field>
+    </record>
+</odoo>
