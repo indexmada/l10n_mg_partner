@@ -10,11 +10,11 @@
         Add VAT and another fiscal information on partner
     """,
     
-    'author': "m0r7y",
-    'website': "r.radoniaina11@gmail.com",
+    'author': "Index Mada",
+    'website': "expertoerp.index-erp.net",
     
     'category': 'Uncategorized',
-    'version': '0.1',
+    'version': '16.0.1',
     
     'depends': [
         'base',
