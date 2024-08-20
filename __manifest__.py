@@ -17,7 +17,7 @@
     'version': '16.0.1',
     
     'depends': [
-        'base',
+        'base', 'contacts'
     ],
     
     'data': [

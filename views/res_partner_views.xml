@@ -8,6 +8,12 @@
                 <field name="nif" attrs="{'invisible':[('company_type','=','person')]}"/>
                 <field name="stat" attrs="{'invisible':[('company_type','=','person')]}"/>
                 <field name="rcs" attrs="{'invisible':[('company_type','=','person')]}"/>
+                <label for="code_fisc"/>
+                <div>
+                    <field name="code_fisc" class="oe_inline" attrs="{'invisible':[('company_type','=','person')]}"/>
+                    du
+                    <field name="date_code_fisc" class="oe_inline" nolabel="1" attrs="{'invisible':[('company_type','=','person')]}"/>
+                </div>
                 <label for="cin"/>
                 <div>
                     <field name="cin" class="oe_inline" attrs="{'invisible':[('company_type','=','company')]}"/>

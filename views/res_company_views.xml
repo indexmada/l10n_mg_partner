@@ -10,6 +10,12 @@
                 <field name="nif"/>
                 <field name="stat"/>
                 <field name="rcs"/>
+                <label for="code_fisc"/>
+                <div>
+                    <field name="code_fisc" class="oe_inline"/>
+                    du
+                    <field name="date_code_fisc" class="oe_inline" nolabel="1"/>
+                </div>
             </xpath>
             <xpath expr="//field[@name='vat']" position="attributes">
             <attribute name="invisible">1</attribute>
